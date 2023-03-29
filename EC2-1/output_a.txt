@@ -1,0 +1,150 @@
+[ec2-user@ip-172-31-27-7 imgRecog]$ mvn exec:java -Dexec.mainClass="org.example.App"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< org.example:imgRecog >------------------------
+[INFO] Building imgRecog 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ imgRecog ---
+2023-03-09 02:00:37:278 +0000 [org.example.App.main()] INFO org.example.App - Application starts
+2023-03-09 02:00:39:054 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=njit-cs-643.s3.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[])
+2023-03-09 02:00:39:741 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: NER0K1WE1KWCJ9CJ, Extended Request ID: pHZraqVqYdrP5sfCMdxuKjHCPeRDp5Ue5q2VeMW+GEJLQuDSeV4cKBLSJ1VQ5s1E19Sdt0uGIuQ=
+
+ The name of the key is 1.jpg
+ The object is 9 KBs
+ The owner is null
+Detected labels for 1.jpg
+
+Label: Car
+Confidence: 99.94879
+
+--------------------
+
+id1
+Sending 1.jpg
+
+2023-03-09 02:00:42:452 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:00:42:581 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: b048c10e-7999-51d9-b4b8-9d8d39930739, Extended Request ID: not available
+
+ The name of the key is 10.jpg
+ The object is 61 KBs
+ The owner is null
+Detected labels for 10.jpg
+
+Image is not a car
+id2
+
+ The name of the key is 2.jpg
+ The object is 50 KBs
+ The owner is null
+Detected labels for 2.jpg
+
+Label: Car
+Confidence: 99.703156
+
+--------------------
+
+id2
+Sending 2.jpg
+
+2023-03-09 02:00:44:913 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:00:44:934 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: 138c761e-15b7-5e5a-b316-2a9d55bbc8ba, Extended Request ID: not available
+
+ The name of the key is 3.jpg
+ The object is 38 KBs
+ The owner is null
+Detected labels for 3.jpg
+
+Label: Car
+Confidence: 87.49664
+
+--------------------
+
+Image is not a car
+id3
+
+ The name of the key is 4.jpg
+ The object is 115 KBs
+ The owner is null
+Detected labels for 4.jpg
+
+Label: Car
+Confidence: 99.47948
+
+--------------------
+
+id3
+Sending 4.jpg
+
+2023-03-09 02:00:46:811 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:00:46:841 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: b20b62ac-b0d0-55e9-b715-3e2ff0de0309, Extended Request ID: not available
+
+ The name of the key is 5.jpg
+ The object is 85 KBs
+ The owner is null
+Detected labels for 5.jpg
+
+Label: Car
+Confidence: 99.51721
+
+--------------------
+
+id4
+Sending 5.jpg
+
+2023-03-09 02:00:48:233 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:00:48:245 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: 4164021b-5efe-5ea2-8d06-5e981eee8842, Extended Request ID: not available
+
+ The name of the key is 6.jpg
+ The object is 126 KBs
+ The owner is null
+Detected labels for 6.jpg
+
+Label: Car
+Confidence: 98.79461
+
+--------------------
+
+id5
+Sending 6.jpg
+
+2023-03-09 02:00:49:803 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:00:49:815 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: d9d3c505-c792-5aba-a5eb-998687834c5a, Extended Request ID: not available
+
+ The name of the key is 7.jpg
+ The object is 989 KBs
+ The owner is null
+Detected labels for 7.jpg
+
+Label: Car
+Confidence: 99.999916
+
+--------------------
+
+id6
+Sending 7.jpg
+
+2023-03-09 02:00:51:382 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:00:51:400 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: fbe9cf56-dc27-55da-9d06-93d59c34333a, Extended Request ID: not available
+
+ The name of the key is 8.jpg
+ The object is 13 KBs
+ The owner is null
+Detected labels for 8.jpg
+
+Image is not a car
+id7
+
+ The name of the key is 9.jpg
+ The object is 515 KBs
+ The owner is null
+Detected labels for 9.jpg
+
+Image is not a car
+id7
+2023-03-09 02:00:52:502 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:00:52:516 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: f661e46e-3bd2-5857-bc00-b8ed7bc6beb7, Extended Request ID: not available
+
+Connection closed
+[ec2-user@ip-172-31-27-7 imgRecog]$ 
