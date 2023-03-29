@@ -16,10 +16,8 @@
 <img width="772" alt="image" src="https://user-images.githubusercontent.com/120745648/223907726-7d845714-bb63-47dd-a58c-4fa579001207.png">
 
 - Network Settings -> Created a setting with default values for ssh, http, https
-<img width="728" alt="image" src="https://user-images.githubusercontent.com/120745648/223908044-b7762999-c1c6-4c7a-9878-61480e7d902a.png">
 
 - Used the same setting for the 2 EC2 instances
-<img width="1146" alt="image" src="https://user-images.githubusercontent.com/120745648/223907907-c44619d5-915b-49c6-a795-b6d03e24afc8.png">
 
 - Configure Storage -> Used the default free tier storage that was available for both the instances
 <img width="742" alt="image" src="https://user-images.githubusercontent.com/120745648/223908317-ceaf21c8-da88-4706-a1e3-2103b6cefbae.png">
