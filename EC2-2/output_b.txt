@@ -1,0 +1,160 @@
+[ec2-user@ip-172-31-55-253 imageRecog]$ mvn exec:java -Dexec.mainClass="org.example.App"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< org.example:imageRecog >-----------------------
+[INFO] Building imageRecog 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ imageRecog ---
+2023-03-09 02:00:53:025 +0000 [org.example.App.main()] INFO org.example.App - Application starts
+2023-03-09 02:00:54:442 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:00:55:005 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: a29114b1-aea7-56da-9257-4832eeb1d0af, Extended Request ID: not available
+2023-03-09 02:00:55:194 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:00:55:217 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: 5ddec864-3f66-53c8-92d2-94e77f7195bd, Extended Request ID: not available
+Detected lines and words for 1.jpg
+Detected: $ BR8167
+Confidence: 93.95657
+Id : 0
+Parent Id: null
+Type: LINE
+
+Detected: $
+Confidence: 93.66762
+Id : 1
+Parent Id: 0
+Type: WORD
+
+Detected: BR8167
+Confidence: 94.24553
+Id : 2
+Parent Id: 0
+Type: WORD
+
+[1.jpg]
+{1.jpg=[$ BR8167, $, BR8167]}
+2023-03-09 02:00:58:091 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:00:58:116 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: ff7f727c-0f00-5dae-a45b-2eff4f1aabdb, Extended Request ID: not available
+2023-03-09 02:00:58:119 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:00:58:138 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: 799bed56-5745-50a4-8e3c-b1d5175f96d1, Extended Request ID: not available
+Detected lines and words for 2.jpg
+[1.jpg, 2.jpg]
+{2.jpg=[], 1.jpg=[$ BR8167, $, BR8167]}
+2023-03-09 02:01:00:179 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:01:00:207 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: d4c7810a-ed87-5c13-b8fa-dd89ad9b1a66, Extended Request ID: not available
+2023-03-09 02:01:00:212 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:01:00:238 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: a3b22109-fccd-5dd0-9503-7d8abcd11ba5, Extended Request ID: not available
+Detected lines and words for 4.jpg
+Detected: YHI9 OTZ
+Confidence: 99.255684
+Id : 0
+Parent Id: null
+Type: LINE
+
+Detected: YHI9
+Confidence: 99.037766
+Id : 1
+Parent Id: 0
+Type: WORD
+
+Detected: OTZ
+Confidence: 99.4736
+Id : 2
+Parent Id: 0
+Type: WORD
+
+[1.jpg, 2.jpg, 4.jpg]
+{2.jpg=[], 4.jpg=[YHI9 OTZ, YHI9, OTZ], 1.jpg=[$ BR8167, $, BR8167]}
+2023-03-09 02:01:02:717 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:01:02:740 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: 57885eec-b84e-5b20-b900-026ff8506d55, Extended Request ID: not available
+2023-03-09 02:01:02:744 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:01:02:761 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: c8bd1518-36ba-5065-aa3a-499b76a47610, Extended Request ID: not available
+Detected lines and words for 5.jpg
+[1.jpg, 2.jpg, 4.jpg, 5.jpg]
+{2.jpg=[], 4.jpg=[YHI9 OTZ, YHI9, OTZ], 1.jpg=[$ BR8167, $, BR8167], 5.jpg=[]}
+2023-03-09 02:01:05:708 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:01:05:729 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: 00b869af-22d6-5982-959f-352c62f7bff7, Extended Request ID: not available
+2023-03-09 02:01:05:734 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:01:05:750 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: 2cab1b57-c286-53c5-b7e0-47d482a785b0, Extended Request ID: not available
+Detected lines and words for 6.jpg
+[1.jpg, 2.jpg, 4.jpg, 5.jpg, 6.jpg]
+{2.jpg=[], 4.jpg=[YHI9 OTZ, YHI9, OTZ], 6.jpg=[], 1.jpg=[$ BR8167, $, BR8167], 5.jpg=[]}
+2023-03-09 02:01:07:566 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:01:07:590 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: cb5e5b63-e469-5ff9-856b-07e0a44af98c, Extended Request ID: not available
+2023-03-09 02:01:07:596 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:01:07:609 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: 57802830-f10d-55f9-b806-74b3b12e138c, Extended Request ID: not available
+Detected lines and words for 7.jpg
+Detected: Lamborghini
+Confidence: 97.139915
+Id : 0
+Parent Id: null
+Type: LINE
+
+Detected: LP 610 LB
+Confidence: 93.50435
+Id : 1
+Parent Id: null
+Type: LINE
+
+Detected: ВО
+Confidence: 78.93724
+Id : 2
+Parent Id: null
+Type: LINE
+
+Detected: BWW
+Confidence: 11.18303
+Id : 3
+Parent Id: null
+Type: LINE
+
+Detected: Lamborghini
+Confidence: 97.139915
+Id : 4
+Parent Id: 0
+Type: WORD
+
+Detected: LP
+Confidence: 99.59495
+Id : 5
+Parent Id: 1
+Type: WORD
+
+Detected: 610 LB
+Confidence: 87.41375
+Id : 6
+Parent Id: 1
+Type: WORD
+
+Detected: ВО
+Confidence: 78.93724
+Id : 7
+Parent Id: 2
+Type: WORD
+
+Detected: BWW
+Confidence: 11.18303
+Id : 8
+Parent Id: 3
+Type: WORD
+
+[1.jpg, 2.jpg, 4.jpg, 5.jpg, 6.jpg, 7.jpg]
+{2.jpg=[], 4.jpg=[YHI9 OTZ, YHI9, OTZ], 6.jpg=[], 1.jpg=[$ BR8167, $, BR8167], 5.jpg=[], 7.jpg=[Lamborghini, LP 610 LB, ВО, BWW, Lamborghini, LP, 610 LB, ВО, BWW]}
+2023-03-09 02:01:09:713 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:01:09:733 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: 476d0995-d456-5514-b7f9-551694737361, Extended Request ID: not available
+2023-03-09 02:01:09:739 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Sending Request: DefaultSdkHttpFullRequest(httpMethod=POST, protocol=https, host=sqs.us-east-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, Content-Length, Content-Type, User-Agent], queryParameters=[])
+2023-03-09 02:01:09:754 +0000 [org.example.App.main()] DEBUG software.amazon.awssdk.request - Received successful response: 200, Request ID: 02232d6a-0903-589d-9760-71e94926dee8, Extended Request ID: not available
+[1.jpg, 2.jpg, 4.jpg, 5.jpg, 6.jpg, 7.jpg]
+{2.jpg=[], 4.jpg=[YHI9 OTZ, YHI9, OTZ], 6.jpg=[], 1.jpg=[$ BR8167, $, BR8167], 5.jpg=[], 7.jpg=[Lamborghini, LP 610 LB, ВО, BWW, Lamborghini, LP, 610 LB, ВО, BWW]}
+[1.jpg, 2.jpg, 4.jpg, 5.jpg, 6.jpg, 7.jpg]
+
+1.jpg: $ BR8167 | $ | BR8167 | 
+
+4.jpg: YHI9 OTZ | YHI9 | OTZ | 
+
+7.jpg: Lamborghini | LP 610 LB | ВО | BWW | Lamborghini | LP | 610 LB | ВО | BWW | 
+
+Successfully wrote to the file.
+
+Connection closed
+[ec2-user@ip-172-31-55-253 imageRecog]$ 
