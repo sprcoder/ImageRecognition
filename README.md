@@ -3,7 +3,6 @@
 ## EC2 Instance Setup
 
 1. Created 2 EC2 instances in AWS, EC2-A & EC2-B
-<img width="2512" alt="image" src="https://user-images.githubusercontent.com/120745648/223900665-a0fe0f6b-8725-4375-80cd-1a9d8a96fd9a.png">
 2. Each Instace would have the following configuration while creating.
 
 - OS -> Amazon Linux 2 AMI 64 bit(x86)
