@@ -34,7 +34,6 @@
   - Connect to the EC2-A Instance using SSH
   - In the instance run `aws configure`
     - This would ask for the access key, id and session details that are available in the Learners Lab, AWS Details.
-    <img width="293" alt="image" src="https://user-images.githubusercontent.com/120745648/223922262-ef35d5b5-7d0d-4cdc-8da4-5aee9374ff89.png">
 
   - Once AWS is configured install java, I have used `jdk-11.0.16.1_linux-x64_bin.rpm`
   - After java installation, install maven, I have used `apache-maven-3.9.0`. Provided maven bin path to `$PATH` variable in linux to finalize installation.
